@@ -1,5 +1,7 @@
 ### About the project
 
+![Screenshot](screenshot.png)
+
 This project is implemented using React, Node.JS (express), MongoDB, JsonWebToken, Jest and swagger.
 
 ### Development Environment
