@@ -1,0 +1,266 @@
+/* @extend display-flex; */
+display-flex,
+.signup-content,
+.form-row,
+.form-radio,
+.select-icon,
+.select-icon i {
+  display: flex;
+  display: -webkit-flex;
+}
+
+/* Colors */
+.primary_100 {
+  color: #665ae1;
+}
+.primary_100_bg {
+  background: #665ae1;
+  color: #ffffff;
+}
+.primary_80 {
+  color: #665ae1a3;
+}
+.primary_40 {
+  color: #665ae152;
+}
+.gray_100 {
+  color: #272727;
+}
+.gray_80 {
+  color: #272727d9;
+}
+.gray_60 {
+  color: #27272766;
+}
+.gray_40 {
+  color: #dedede;
+}
+.gray_20 {
+  color: #f5f6f8;
+}
+.white {
+  color: #ffffff;
+}
+.black {
+  color: #000000;
+}
+
+.register-form .section_title {
+  font-weight: bold;
+}
+
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
+  transition: all 300ms ease 0s;
+  -moz-transition: all 300ms ease 0s;
+  -webkit-transition: all 300ms ease 0s;
+  -o-transition: all 300ms ease 0s;
+  -ms-transition: all 300ms ease 0s;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #272727;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+.container {
+  background: #fff;
+  overflow: hidden;
+}
+
+nav {
+  padding-bottom: 20px;
+}
+.nav-link {
+  color: #665ae152;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 2px solid #665ae152;
+}
+
+.nav-link.active,
+.nav-link:focus {
+  color: #665ae1;
+  border-bottom: 2px solid #665ae1;
+}
+
+.signup-img,
+.signup-form {
+  display: block;
+  width: 50%;
+}
+
+.signup-img {
+  margin-bottom: -7px;
+}
+
+.register-form {
+  padding: 100px 150px;
+}
+
+.form-row {
+  margin: 0 -15px;
+}
+.form-row .form-group {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.form-group {
+  margin-bottom: 23px;
+  position: relative;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 11px 20px;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 13px;
+  background-color: #f5f6f8;
+  border: 1px solid #27272766;
+  outline: none;
+  border-radius: 5px;
+}
+
+input:focus {
+  border: 1px solid #665ae1;
+  outline: none;
+}
+
+/* Disabled state */
+input:disabled,
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.9;
+}
+
+.form-submit {
+  padding-top: 27px;
+  text-align: left;
+}
+
+.submit {
+  display: inline-block;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #665ae1;
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer_nav_link {
+  position: relative;
+  top: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #27272766;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .signup-content {
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+  }
+
+  .signup-img,
+  .signup-form {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .register-form {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: absolute;
+    bottom: -5px;
+    background: #fff;
+    text-align: center;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .home-nav{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px;
+  }
+  .home-nav a{
+    font-size: 18px;
+  }
+  .register-form .section_title {
+    position: absolute;
+    top: -80px;
+    left: 35%;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 768px) {
+  .register-form {
+    padding: 0px 40px 50px 40px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .register-form .section_title {
+    position: absolute;
+    top: -80px;
+    left: 8%;
+    color: #fff;
+    padding:0px 50px;
+  }
+  .form-row {
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    margin: 0px;
+  }
+
+  .form-row .form-group {
+    width: 100%;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .register-form {
+    padding-bottom: 160px;
+  }
+}

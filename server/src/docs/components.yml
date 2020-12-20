@@ -1,0 +1,34 @@
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+        password:
+          type: string     
+      example:
+        name: John Kurian
+        email: jk@example.com
+        password: secret
+  responses:
+    Forbidden:
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            code: 403
+            message: Forbidden
+    NotFound:
+      description: Not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            code: 404
+            message: Not found
